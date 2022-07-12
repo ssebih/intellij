@@ -13,6 +13,7 @@ object HelloWorld {
     println(comptage_caracteres("salut les gars"))
     getResult(10)
     testWhile(5)
+    tesFor()
   }
 /*
 Ma première fonction
@@ -40,7 +41,7 @@ def comptage_caracteres
 
 
   }
-  // boucles
+  // boucles / -1 boucle While
   def testWhile (valeur_conditionnelle: Int): Unit ={
     var i: Int = 0
     while (i< valeur_conditionnelle){
@@ -48,5 +49,14 @@ def comptage_caracteres
       i=i+1
     }
 
+
+  }
+  // Boucles /-2 boucle for
+  def tesFor(): Unit ={
+    var i:Int = 0
+    for (i <- 0 to 15 by 2 ){
+      println("itération for N° "+i)
+
+    }
   }
 }
