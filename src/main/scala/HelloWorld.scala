@@ -1,0 +1,22 @@
+object HelloWorld {
+  /*
+  premier projet git avec intellij/scala
+   */
+  val ma_var_immutable : String = "Salim" // variable immutable à portée privée
+  private val une_var_immutable : String= "mon test de scala"
+  def main(args: Array[String]): Unit = {
+
+    println("Hello World : It's my first project, I am happy")
+    var test:Int = 15
+    test = test +10
+    println(test)
+    println(comptage_caracteres("Bonjour je suis salim"))
+  }
+/*
+Ma première fonction
+def comptage_caracteres
+ */
+  def comptage_caracteres (text : String) : Int = {
+  return (text.trim().length)
+  }
+}
