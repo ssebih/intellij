@@ -32,6 +32,8 @@ object HelloWorld {
 
     collectionScala()
 
+    affichList()
+
   }
 /*
 Ma première fonction
@@ -90,6 +92,14 @@ def comptage_caracteres
     println(ma_liste(0))
     println(plage_v(2))
     println(plage_v)
+  }
+
+  //affichage des éléments d'une liste
+  def affichList(): Unit ={
+    val ma_liste: List[Int]= List(1,2,3,4,67,765,132)
+    for (i<- ma_liste){
+      println(i)
+    }
   }
 
 }
