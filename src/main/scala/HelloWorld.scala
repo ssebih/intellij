@@ -246,8 +246,4 @@ for (e <- ma_liste3){
     maTable.foreach(e=> println(e))
   }
 
-
-
-
-
 }

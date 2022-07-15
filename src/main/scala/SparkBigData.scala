@@ -30,14 +30,16 @@ object SparkBigDataSession {
       System.setProperty("hadoop.home.dir","C:/install/exe&zip/hadoop")
       ss = SparkSession.builder()
           .master(("local[*]"))
-          .enableHiveSupport()
+          .config("spark.sql.crossJoin.enabled", "true")
+        //  .enableHiveSupport()
           .getOrCreate()
     }else{
        ss = SparkSession.builder()
         .appName("SAPRK_SALIM")
         .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
-        .config("spark.sql.crossJoin.enabled", "true")
-        .enableHiveSupport().getOrCreate()
+         .config("spark.sql.crossJoin.enabled", "true")
+       // .enableHiveSupport()
+         .getOrCreate()
 
     }
 
